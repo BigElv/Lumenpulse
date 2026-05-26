@@ -239,7 +239,7 @@ fn test_cancel_operation_emits_event() {
     let id = client.queue_operation(&admin, &action);
     client.cancel_operation(&admin, &id);
 
-    assert!(env.events().all().len() > 0);
+    assert!(!env.events().all().is_empty());
 }
 
 #[test]
