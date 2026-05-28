@@ -50,6 +50,7 @@ import { IdempotencyInterceptor } from './common/interceptors/idempotency.interc
 import { DeprecationInterceptor } from './common/interceptors/deprecation.interceptor';
 import { SearchModule } from './search/search.module';
 import { ExportModule } from './export/export.module';
+import { SignalsModule } from './signals/signals.module';
 import { AppConfigModule } from './config/config.module';
 import { CrowdfundModule } from './crowdfund/crowdfund.module';
 
@@ -116,6 +117,7 @@ import { CrowdfundModule } from './crowdfund/crowdfund.module';
     WatchlistModule,
     OutboxModule,
     ExportModule,
+    SignalsModule,
     TelegramBotModule,
     ModerationModule,
     SearchModule,
